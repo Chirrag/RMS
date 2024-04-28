@@ -1,0 +1,268 @@
+<div class="px-4 sm:px-12 py-2">
+    <img class="w-full" alt="banner-qscore" src="/assets/wecanhelp-banner.jpg" />
+
+    <div class="lg:flex my-2 ">
+        <div class="w-full lg:w-2/3 sm:p-2 max-h-screen overflow-scroll">
+
+            <!-- Reports Table -->
+            <div>
+                <div class="mb-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-sm sm:text-xl font-bold my-2 text-gray-600">Study Waves</h3>
+                        <button class="bg-gray-500 px-2 rounded-full text-xs text-white"
+                            (click)="toggleStudywavesModal()">Add</button>
+
+                    </div>
+                    <hr class="mb-2">
+                    <div *ngFor="let data of studyWaveSelected">
+                        <button (click)="removeAndUncheck($event,data)"> <span
+                                class="bg-gray-500 rounded-full px-1 text-white text-xs">&#215;</span></button>
+                        <span class="text-sm text-gray-500">&nbsp;{{data.studydate}}</span>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-sm sm:text-xl font-bold my-2 text-gray-600"
+                            *ngIf="reportTypeName === 'Character / Property Profile' ">Character / Property</h3>
+                        <h3 class="text-sm sm:text-xl font-bold my-2 text-gray-600"
+                            *ngIf="reportTypeName !== 'Character / Property Profile'">Category</h3>
+                        <button class="bg-gray-500 px-2 rounded-full text-xs text-white"
+                            (click)="toggleCategoriesModal()">Add</button>
+                    </div>
+                    <hr class="mb-2">
+                    <div *ngFor="let data of CategoryArraySelected">
+                        <button (click)="removeAndUncheckCat($event,data)"> <span
+                                class="bg-gray-500 rounded-full px-1 text-white text-xs">&#215;</span></button>
+                        <span class="text-sm text-gray-500">&nbsp;{{data.name}}</span>
+                    </div>
+                </div>
+
+                <!-- Demographics  -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-sm sm:text-xl font-bold my-2 text-gray-600">Study Demographics</h3>
+                        <button class="bg-gray-500 px-2 rounded-full text-xs text-white"
+                            (click)="toggleDemographicssModal()">Add</button>
+                    </div>
+                    <hr class="mb-2">
+                    {{FillDistinct(demoArraySelected)}}
+                    <div *ngFor="let demoT of DistinctDemoType">
+                        <br><b style="color: grey;">{{demoT}}</b>
+                        <div *ngFor="let data of demoArraySelected">
+                            <ng-container *ngIf="demoT==data.demoType">
+
+                                <button (click)="removeAndUncheckDemo($event,data)"> <span
+                                        class="bg-gray-500 rounded-full px-1 text-white text-xs">&#215;</span></button>
+
+                                <span class="text-sm text-gray-500">&nbsp;{{data.demoName}}</span>
+
+                            </ng-container>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rating Scale Point -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-sm sm:text-xl font-bold my-2 text-gray-600">
+                            Rating Scale Points</h3>
+
+                        <button class="bg-gray-500 px-2 rounded-full text-xs text-white"
+                            (click)="toggleScalePointModal()">Add</button>
+                    </div>
+                    <hr class="mb-2">
+                    <p class="text-sm text-gray-500 pb-2">Click the arrows below to sort rating scale points</p>
+                    <div *ngFor="let data of ScalePointArray">
+                        <button (click)="removeAndUncheckScale($event,data)"> <span
+                                class="bg-gray-500 rounded-full px-1 text-white text-xs">&#215;</span></button>
+                        <span class="text-sm text-gray-500">&nbsp;{{data}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification sidebar -->
+        <div class="w-full lg:w-1/3 p-3">
+            <div class="text-grey-500 font-bold">
+                <a [routerLink]="['/user']" class="text-gray-500">
+                    <img src="https://img.icons8.com/ios/50/000000/home--v1.png" alt="Home Icon"
+                        class="inline-block align-middle m-2 w-5" />
+                    Return to the Client Dashboard
+                </a>
+                <div class="w-full bg-gradient-to-t from-blue-100 to-blue-50 rounded-lg border border-gray-300">
+                    <div
+                        class="w-full bg-gradient-to-t from-blue-900 to-blue-100 rounded-t-lg text-white font-bold p-2">
+                        Report Builder
+                    </div>
+
+                    <div class="flex p-4 items-center">
+                        <svg height="50" viewBox="0 0 1792 1792" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M896 768q237 0 443-43t325-127v170q0 69-103 128t-280 93.5-385 34.5-385-34.5-280-93.5-103-128v-170q119 84 325 127t443 43zm0 768q237 0 443-43t325-127v170q0 69-103 128t-280 93.5-385 34.5-385-34.5-280-93.5-103-128v-170q119 84 325 127t443 43zm0-384q237 0 443-43t325-127v170q0 69-103 128t-280 93.5-385 34.5-385-34.5-280-93.5-103-128v-170q119 84 325 127t443 43zm0-1152q208 0 385 34.5t280 93.5 103 128v128q0 69-103 128t-280 93.5-385 34.5-385-34.5-280-93.5-103-128v-128q0-69 103-128t280-93.5 385-34.5z" />
+                        </svg>
+                        <div class="mx-1">
+                            <span class="text-2xl font-extrabold text-gray-500 cursor-pointer">Source</span>
+                            <p class="text-xs font-bold text-gray-500">{{DatabaseName}}</p>
+                        </div>
+                    </div>
+                    <!-- second -->
+                    <div class="flex p-4 items-center">
+                        <svg height="50" viewBox="0 0 64 64" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="22" style="fill:#d9dae2" width="4" x="30" y="39" />
+                            <polygon points="47 59 32 51 17 59 15 55 32 46 49 55 47 59" style="fill:#cfcfd9" />
+                            <rect height="34" style="fill:#e5e6eb" width="50" x="7" y="7" />
+                            <rect height="34" style="fill:#d9dae2" width="50" x="7" y="7" />
+                            <path d="M7,7H57a0,0,0,0,1,0,0V7A34,34,0,0,1,23,41H7a0,0,0,0,1,0,0V7A0,0,0,0,1,7,7Z"
+                                style="fill:#e5e6eb" />
+                            <circle cx="19" cy="21" r="4" style="fill:#027de5" />
+                            <rect height="4" style="fill:#027de5" width="6" x="43" y="21" />
+                            <rect height="4" style="fill:#027de5" width="6" x="43" y="29" />
+                            <path
+                                d="M19.707,33.707l-1.414-1.414,8-8A1,1,0,0,1,27,24h3.586l4.707-4.707,1.414,1.414-5,5A1,1,0,0,1,31,26H27.414Z"
+                                style="fill:#027de5" />
+                            <polygon points="31 17 39 17 39 25 31 17" style="fill:#027de5" />
+                            <rect height="6" width="58" x="3" y="3" />
+                            <rect height="6" style="fill:#444" width="50" x="7" y="3" />
+                            <polygon points="9 17 9 11 15 11 9 17" style="fill:#fff" />
+                            <path
+                                d="M61,2H3A1,1,0,0,0,2,3V9a1,1,0,0,0,1,1H6V41a1,1,0,0,0,1,1H29v4.457L14.532,54.116a1,1,0,0,0-.427,1.331l2,4a1,1,0,0,0,1.366.436L29,53.734V61a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V53.734l11.529,6.149a1,1,0,0,0,1.366-.436l2-4a1,1,0,0,0-.427-1.331L35,46.457V42H57a1,1,0,0,0,1-1V10h3a1,1,0,0,0,1-1V3A1,1,0,0,0,61,2ZM8,8V4H56V8ZM4,4H6V8H4ZM33,60H31V52.667l1-.533,1,.533Zm13.564-2.365L32.471,50.117a1.007,1.007,0,0,0-.942,0L17.436,57.635l-1.105-2.208L32,47.132l15.669,8.3ZM33,45.4l-.532-.282a1.006,1.006,0,0,0-.936,0L31,45.4V42h2ZM56,40H8V10H56ZM60,8H58V4h2Z" />
+                        </svg>
+                        <div class="mx-1">
+                            <span class="text-2xl font-extrabold text-gray-500 cursor-pointer">Report Type</span>
+                            <p id="reportName" class="text-xs font-bold text-gray-500">{{ReportShowName}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 m-4 flex flex-col sm:flex-row items-center justify-center">
+                    <button type="button" (click)="onSave()"
+                        class="button-style text-black-900 bg-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-1.5 mb-2 dark:bg-white-800 dark:text-black dark:border-gray-600">Save</button>
+
+                    <button type="button" (click)="onSaveView()"
+                        class="button-style text-black-900 bg-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-1.5 mb-2 dark:bg-white-800 dark:text-black dark:border-gray-600">Save
+                        & View</button>
+
+                    <button type="button" (click)="Reset()"
+                        class="button-style text-black-900 bg-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-1.5 mb-2 dark:bg-white-800 dark:text-black dark:border-gray-600">Reset</button>
+                </div>
+
+            </div>
+
+            <!-- Study Waves Modal -->
+            <div class="fixed inset-0 flex items-center justify-center z-50 px-4" [class.hidden]="!studywaveModal">
+                <div class="fixed inset-0 bg-black opacity-50"></div>
+                <div class="bg-white p-4 shadow-md rounded-lg relative w-96  max-h-96 overflow-y-scroll">
+                    <div class="flex justify-between mb-6 items-center">
+                        <h2 class="text-lg font-semibold text-gray-500">Study waves</h2>
+                        <button (click)="toggleStudywavesModal()"
+                            class="bg-red-500 text-white rounded-full w-6 h-6 hover:bg-red-700">✖</button>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <input id="selectAllCheckbox" type="checkbox" class="form-checkbox h-5 w-5 text-blue-500"
+                                (change)="toggleSelectAllStudyWaves($event)">
+                            <span class="font-bold" id="selectAllLabel">Select All</span>
+                        </div>
+                        <div *ngFor="let data of studyData; trackBy: trackByStudyWaveFn">
+                            <div class="flex items-center space-x-2">
+                                <input id="{{data.recID}}" type="checkbox" class="form-checkbox h-5 w-5 text-blue-500"
+                                    [checked]="isStudyWaveSelected(data)" (change)="onChangeCheckBox($event,data)">
+                                <span>{{ data.studydate }}</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- categories Modal  -->
+            <div class="fixed inset-0 flex items-center justify-center z-50 px-4" [class.hidden]="!CategoriesModal">
+                <div class="fixed inset-0 bg-black opacity-50"></div>
+                <div class="bg-white p-4 shadow-md rounded-lg relative w-full  max-h-96 overflow-y-scroll">
+                    <div class="flex justify-between mb-6 items-center">
+                        <h2 class="text-lg font-semibold text-gray-500">categories</h2>
+                        <button (click)="toggleCategoriesModal()"
+                            class="bg-red-500 text-white rounded-full w-6 h-6 hover:bg-red-700">✖</button>
+                    </div>
+                    <div *ngIf="studyWaveSelected.length === 0" class="text-danger"
+                        style="text-align: center; color: red;">
+                        No search results found. Please check your spelling. Your search term might not be included in
+                        the selected study waves, consider selecting additional study waves.
+                    </div>
+                    <div *ngFor="let data of getItemsToDisplay();">
+                        <div class="flex items-center space-x-2">
+                            <input id="{{data.name}}" type="checkbox" class="form-checkbox h-5 w-5 text-blue-500"
+                                (change)="OnChangeCategoriesBox($event,data)">
+                            <span>{{ data.name }}</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <button class="px-2 py-1 mx-2 rounded bg-blue-500 text-white hover:bg-blue-700"
+                            [disabled]="currentPage === 1" (click)="prevCategory(currentPage)">Previous</button>
+                        <span class="px-2 py-1">Page {{ currentPage }} of {{ totalPages }}</span>
+                        <button class="px-2 py-1 mx-2 rounded bg-blue-500 text-white hover:bg-blue-700"
+                            [disabled]="currentPage === totalPages" (click)="nextCategory(currentPage)">Next</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Demographics  Modal -->
+            <div class="fixed inset-0 flex items-center justify-center z-50 px-4" [class.hidden]="!DemographicsModal">
+                <div class="fixed inset-0 bg-black opacity-50"></div>
+                <div class="bg-white p-4 shadow-md rounded-lg relative w-full  max-h-96 overflow-y-scroll">
+                    <div class="flex justify-between mb-6 items-center">
+                        <h2 class="text-lg font-semibold text-gray-500">Study Demographics</h2>
+                        <button (click)="toggleDemographicssModal()"
+                            class="bg-red-500 text-white rounded-full w-6 h-6 hover:bg-red-700">✖</button>
+                    </div>
+                    <div class="ml-6 mb-4">
+                        <mat-button-toggle-group name="favoriteColor" class="mat-button-toggle flex-wrap border-0"
+                            aria-label="Favorite Color">
+                            <mat-button-toggle class="border h-10 " *ngFor="let item of demoType"
+                                [value]="item.demoType" (click)="OnClickDemoName(item.demoType)">{{ item.demoType
+                                }}</mat-button-toggle>
+                        </mat-button-toggle-group>
+                    </div>
+                    <div *ngFor="let data of demodata">
+                        <div class="flex items-center">
+                            <div *ngFor="let item of demoArrayNeedToShow; index as i" class="d-flex">
+                                <div [hidden]="data.demoCode!=item.demoCode" class="mx-6">
+                                    <input id="{{data.demoCode+'-'+i}}" type="checkbox"
+                                        class="form-checkbox h-5 w-5 text-blue-500"
+                                        (change)="OnChangeDemoBox($event,data)">&nbsp;
+                                    <span>{{ data.demoName }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ScalePoints Modal -->
+            <div class="fixed inset-0 flex items-center justify-center z-50 px-4" [class.hidden]="!ScalePointsModal">
+                <div class="fixed inset-0 bg-black opacity-50"></div>
+                <div class="bg-white p-4 shadow-md rounded-lg relative w-96  max-h-96 overflow-y-scroll">
+                    <div class="flex justify-between mb-6 items-center">
+                        <h2 class="text-lg font-semibold text-gray-500">Rating Scale Points</h2>
+                        <button (click)="toggleScalePointModal()"
+                            class="bg-red-500 text-white rounded-full w-6 h-6 hover:bg-red-700">✖</button>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <input id="selectAllScalePointsCheckbox" type="checkbox"
+                            class="form-checkbox h-5 w-5 text-blue-500"
+                            (change)="toggleSelectAllScalePoints($event)"><br>
+                        <span class="font-bold">Select All</span>
+                    </div>
+                    <div *ngFor="let data of scalePoint">
+                        <div class="flex items-center space-x-2">
+                            <input id="{{data.scalePoint}}" type="checkbox" class="form-checkbox h-5 w-5 text-blue-500"
+                                [checked]="isScalePointSelected(data.scalePoint)"
+                                (change)="OnChangeScaleCheckBox($event,data.scalePoint)">
+                            <span>{{ data.scalePoint }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

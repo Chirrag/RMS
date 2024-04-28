@@ -1,0 +1,291 @@
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\appsettings.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.exe
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.deps.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.runtimeconfig.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.pdb
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Azure.Core.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Azure.Identity.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Humanizer.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.CodeDom.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Text.Json.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Domain.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Infrastructure.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Domain.pdb
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Infrastructure.pdb
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.AssemblyReference.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.AssemblyInfoInputs.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.AssemblyInfo.cs
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.CoreCompileInputs.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.QScoresAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.QScoresAPI.props
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.QScoresAPI.props
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.QScoresAPI.props
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\scopedcss\bundle\QScoresAPI.styles.css
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.CopyComplete
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\refint\QScoresAPI.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.pdb
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.genruntimeconfig.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\ref\QScoresAPI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\appsettings.json
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.exe
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.deps.json
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.runtimeconfig.json
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.pdb
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Azure.Core.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Azure.Identity.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Humanizer.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.CodeDom.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Memory.Data.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Text.Json.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Domain.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Infrastructure.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Domain.pdb
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Infrastructure.pdb
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.AssemblyReference.cache
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.AssemblyInfoInputs.cache
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.AssemblyInfo.cs
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.CoreCompileInputs.cache
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.QScoresAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.QScoresAPI.props
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.QScoresAPI.props
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.QScoresAPI.props
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\scopedcss\bundle\QScoresAPI.styles.css
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.CopyComplete
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\refint\QScoresAPI.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.pdb
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.genruntimeconfig.cache
+D:\ASP\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\ref\QScoresAPI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\appsettings.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.exe
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.deps.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.runtimeconfig.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScoresAPI.pdb
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Azure.Core.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Azure.Identity.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Humanizer.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.CodeDom.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Memory.Data.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Text.Json.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Domain.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Infrastructure.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Domain.pdb
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\bin\Debug\net6.0\QScores.Infrastructure.pdb
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.AssemblyReference.cache
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.AssemblyInfoInputs.cache
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.AssemblyInfo.cs
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.CoreCompileInputs.cache
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.QScoresAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.QScoresAPI.props
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.QScoresAPI.props
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.QScoresAPI.props
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\scopedcss\bundle\QScoresAPI.styles.css
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.csproj.CopyComplete
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\refint\QScoresAPI.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.pdb
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\QScoresAPI.genruntimeconfig.cache
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScoresAPI\obj\Debug\net6.0\ref\QScoresAPI.dll

@@ -1,0 +1,81 @@
+#cotnainerFlex{
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping to ensure responsiveness */
+  }
+
+  
+  #table-data{
+    /* text-decoration: None; */
+    direction: LTR;
+    unicode-bidi: Normal;
+    text-align: left;
+    margin: 3%;
+    vertical-align: Top;
+    word-wrap: break-word;
+    font-size: 12px;
+    overflow-y:scroll;
+  }
+  /* td{
+    border:  1px solid lightblue;
+  }
+  */
+  thead{
+    position: sticky;
+    top: 0px;
+  }
+  .tableFooter{
+    width: 400px;
+    font-size: 10px;
+    padding: 2px;
+   display: flex;
+    flex-wrap: nowrap;
+  }
+.TabelDesign{
+  max-height: 90vh;
+  overflow: scroll;
+  margin-top: 10px;
+}
+
+.ApplicationName{
+color: #045198;
+  margin-inline-start: 7.65rem;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent overlay if needed */
+}
+
+.loader {
+  text-align: center;
+}
+
+/* Add this to your CSS or style section */
+.custom-button {
+  color: black;
+  background-color: white;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-weight: medium;
+  font-size: 0.875rem; /* Adjust the font size as needed */
+  margin-left: auto;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px; /* Add margin for spacing */
+}

@@ -1,0 +1,337 @@
+<div class="px-4 sm:px-12 py-2">
+    <img class="w-full" src="/assets/wecanhelp-banner.jpg" />
+    <h3 *ngIf="userInfo" class="text-xl font-bold my-2 text-gray-700" style="text-shadow: 2px 2px 4px rgba(15, 14, 14, 0.5);">Welcome {{userInfo.fullName}}</h3>
+
+    <div class="lg:flex my-2">
+        <div class="w-full lg:w-2/3 sm:p-2">
+
+            <!-- User Info -->
+            <div class="sm:flex mb-8 items-center">
+                <div class="w-full sm:w-1/2 flex items-center justify-center">
+                    <img *ngIf="userInfo" class="w-32 h-32"
+                    src="/assets/image.jpg">
+                    <div class="ml-2">
+                        <button class="text-xs font-bold text-gray-500 cursor-pointer" (click)="showEditProfileModal()">
+                            Edit Profile
+                        </button><br />
+                        <button class="text-xs font-bold text-gray-500 cursor-pointer"
+                            (click)="showChangePasswordModal()">
+                            Change Password
+                        </button><br />
+                        <button class="text-xs font-bold text-gray-500 cursor-pointer"
+                            (click)="showChangePictureModal()">
+                            Change Picture
+                        </button><br />
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 items-center">
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Welcome to the RMS Client Portal, providing 24/7 one-stop secure access to your purchased
+                        data. Applications have been designed to maximize your efficiency for creating personalized Q
+                        Scores reports to meet your analytical objectives.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Reports Table -->
+            <div>
+                <div class="flex justify-between items-center">
+                    <h3 class="text-sm sm:text-xl font-bold my-2 text-gray-700">Recent Reports</h3>
+
+                    <div *ngIf="allReports.length>0" class="relative text-gray-600">
+                        <input [disabled]="service.searchLoader" type="search" name="filter"
+                            placeholder="Filter Recent Reports" [(ngModel)]="filterInput"
+                            class="bg-white h-6 px-2 pr-10 rounded-md text-xs focus:outline-none w-44 sm:w-full border border-gray-500">
+                        <button type="submit" class="absolute right-0 top-0 mt-1 mr-4" (click)="onFilter()">
+                            <svg *ngIf="!service.searchLoader" class="h-4 w-4 fill-current"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966"
+                                style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px"
+                                height="512px">
+                                <path
+                                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            </svg>
+                            <svg *ngIf="service.searchLoader" aria-hidden="true"
+                                class="w-5 h-5 text-gray-200 animate-spin dark:text-blue-600 fill-white"
+                                viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                    fill="currentFill" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <h3 *ngIf="allReports.length==0" class="my-2 text-gray-700">No reports to show!</h3>
+
+                <div *ngIf="allReports.length>0" class="w-full my-4 overflow-x-scroll sm:overflow-visible"
+                    style="scrollbar-width: none;">
+                    <table class="min-w-full">
+                        <thead>
+                            <tr>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-500 tracking-wider">
+                                    Report Name</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-500 tracking-wider">
+                                    Report Date</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-500 tracking-wider">
+                                    Tracking Number</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-500 tracking-wider">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr *ngFor="let item of displayReports.slice(0, 10)">
+                                <td class="px-6 py-2 whitespace-no-wrap text-xs text-gray-500 border-b border-gray-200">
+                                    {{item.reportName}}</td>
+                                <td class="px-6 py-2 whitespace-no-wrap text-xs text-gray-500 border-b border-gray-200">
+                                    {{item.datetime | date: 'M/d/yyyy h:mm:ss a'}}</td>
+                                <td class="px-6 py-2 whitespace-no-wrap text-xs text-gray-500 border-b border-gray-200">
+                                    {{item.recID}}</td>
+                                <td class="px-6 py-2 whitespace-no-wrap text-xs text-gray-500 border-b border-gray-200">
+                                    <a (click)="onClickEdit(item.recID)"
+                                        class="cursor-pointer mx-2">Edit</a>
+                                        <a (click)="onClickView(item.recID)"
+                                            class="cursor-pointer mx-2">View</a>
+                                    <span class="cursor-pointer mx-2" (click)="onDelete(item.recID)">Delete</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Notification sidebar -->
+        <div class="w-full lg:w-1/3">
+            <div class="w-full bg-gradient-to-t from-blue-100 to-blue-50 rounded-lg border border-gray-300">
+                <div class="w-full bg-gradient-to-t from-blue-900 to-blue-100 rounded-t-lg text-white font-bold p-2">
+                    Notification of Report Availability
+                </div>
+
+                <div class="flex p-4 items-center">
+                    <svg class="h-12 w-12" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path style="fill:#2D527C;"
+                                    d="M364.745,512c-1.961,0-3.94-0.379-5.823-1.158c-5.687-2.357-9.397-7.907-9.397-14.064V411.47 c0-8.406,6.817-15.223,15.223-15.223h85.307c6.158,0,11.708,3.71,14.064,9.397c2.355,5.689,1.052,12.236-3.3,16.59l-85.307,85.307 C372.601,510.453,368.707,512,364.745,512z M379.971,426.693v33.332l33.332-33.332H379.971z">
+                                </path>
+                                <path style="fill:#2D527C;"
+                                    d="M297.412,512H83.931c-20.519,0-37.209-16.692-37.209-37.209V37.209C46.721,16.692,63.412,0,83.931,0 h344.137c20.519,0,37.209,16.692,37.209,37.209v374.26c0,4.037-1.604,7.908-4.459,10.764l-85.307,85.307 c-5.946,5.943-15.582,5.943-21.53,0c-5.945-5.945-5.945-15.584,0-21.53l80.849-80.849V37.209c0-3.73-3.034-6.764-6.764-6.764 H83.931c-3.73,0-6.764,3.034-6.764,6.764v437.58c0,3.73,3.034,6.764,6.764,6.764h213.481c8.406,0,15.223,6.817,15.223,15.223 C312.635,505.182,305.818,512,297.412,512z">
+                                </path>
+                            </g>
+                            <polygon style="fill:#CEE8FA;"
+                                points="287.968,236.085 287.968,129.787 224.032,129.787 224.032,236.085 152.268,236.085 256,382.213 359.732,236.085 ">
+                            </polygon>
+                            <path style="fill:#2D527C;"
+                                d="M256,397.434c-4.932,0-9.558-2.388-12.413-6.412L139.856,244.896 c-3.296-4.643-3.725-10.738-1.111-15.797c2.614-5.059,7.832-8.237,13.526-8.237h56.541v-91.074c0-8.406,6.817-15.223,15.223-15.223 h63.936c8.406,0,15.223,6.817,15.223,15.223v91.074h56.541c5.693,0,10.912,3.179,13.526,8.237 c2.614,5.059,2.184,11.154-1.111,15.797L268.416,391.022C265.558,395.046,260.932,397.434,256,397.434z M181.744,251.308 L256,355.914l74.256-104.606h-42.288c-8.406,0-15.223-6.817-15.223-15.223v-91.074h-33.49v91.074 c0,8.406-6.817,15.223-15.223,15.223H181.744z">
+                            </path>
+                        </g>
+                    </svg>
+                    <div class="mx-1">
+                        <span (click)="toggleAllReportsModal()"
+                            class="text-4xl font-extrabold text-gray-500 cursor-pointer hover:text-blue-600 hover:underline">{{allReports.length}}</span>
+                        <p class="text-xs font-bold text-gray-500">Personalized RMS Reports via the Portal</p>
+                    </div>
+                </div>
+
+                <div class="flex p-4 items-center">
+                    <svg class="h-12 w-12" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 318.188 318.188" xml:space="preserve"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <polygon style="fill:#E4E4E4;"
+                                    points="227.321,7.5 40.342,7.5 40.342,310.688 277.846,310.688 277.846,58.025 ">
+                                </polygon>
+                                <g>
+                                    <rect x="151.682" y="20.131" style="fill:#333E48;" width="14.824" height="132.962">
+                                    </rect>
+                                    <path style="fill:#A4A9AD;"
+                                        d="M159.094,142.094c-8.247,0-14.933,20.253-14.933,28.5s6.686,14.933,14.933,14.933 s14.933-6.686,14.933-14.933S167.341,142.094,159.094,142.094z M159.094,177.505c-3.817,0-6.912-3.094-6.912-6.912 s3.094-6.912,6.912-6.912s6.912,3.094,6.912,6.912S162.911,177.505,159.094,177.505z">
+                                    </path>
+                                </g>
+                                <polygon style="fill:#A4A9AD;"
+                                    points="235.14,32.763 40.342,32.763 40.342,7.5 227.321,7.5 "></polygon>
+                                <polygon style="fill:#D1D3D3;" points="227.321,58.025 277.846,58.025 227.321,7.5 ">
+                                </polygon>
+                                <path style="fill:#333E48;"
+                                    d="M143.744,241.367v-7.975h-36.362v10.469h20.281l-20.773,29.503v8.007h37.379v-10.469H122.97 L143.744,241.367z M204.785,237.363c-3.042-2.647-7.593-3.971-13.652-3.971h-16.605v47.979h12.963v-15.917h3.643 c5.819,0,10.31-1.46,13.472-4.381c3.161-2.92,4.742-7.061,4.742-12.421C209.347,243.773,207.825,240.01,204.785,237.363z M194.496,253.247c-1.148,1.094-2.696,1.641-4.644,1.641h-2.362v-11.026h3.347c3.588,0,5.383,1.619,5.383,4.857 C196.22,250.643,195.646,252.153,194.496,253.247z M283.149,52.722L232.625,2.197C231.218,0.79,229.311,0,227.321,0H40.342 c-4.142,0-7.5,3.358-7.5,7.5v303.188c0,4.142,3.358,7.5,7.5,7.5h237.504c4.142,0,7.5-3.358,7.5-7.5V58.025 C285.346,56.036,284.556,54.129,283.149,52.722z M234.821,25.606l24.918,24.919h-24.918L234.821,25.606L234.821,25.606z M47.842,15 h171.979v10.263H47.842V15z M270.346,303.188H47.842V40.263h171.979v17.763c0,4.142,3.358,7.5,7.5,7.5h43.024v237.662H270.346z M151.128,281.371h13.028v-47.979h-13.028V281.371z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="mx-1">
+                        <a (click)="toggleExcelFilesModal()"
+                            class="text-4xl font-extrabold text-gray-500 cursor-pointer hover:text-blue-600 hover:underline">{{zipFilesCount}}</a>
+                        <p class="text-xs font-bold text-gray-500">RMS Excel Files – Full Study Reports</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Create new Report -->
+            <div class="w-full bg-gradient-to-t from-blue-100 to-blue-50 rounded-lg border border-gray-300 mt-10">
+                <div class="w-full bg-gradient-to-t from-blue-900 to-blue-100 rounded-t-lg text-white font-bold p-5">
+
+                </div>
+
+                <div class="flex p-4 items-center">
+                    <svg class="h-12 w-12" viewBox="-8 0 60 60" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #4ac4e3;
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="cls-1"
+                                d="M114,498a4,4,0,0,0-4,4v8H82a4,4,0,0,1-4-4V454a4,4,0,0,1,4-4h36a4,4,0,0,1,4,4v44h-8Zm0,12v-8h8ZM90,466h20a2,2,0,0,1,0,4H90A2,2,0,1,1,90,466Zm0,10h20a2,2,0,0,1,0,4H90A2,2,0,1,1,90,476Zm0,10h20a2,2,0,0,1,0,4H90A2,2,0,1,1,90,486Z"
+                                id="document" transform="translate(-78 -450)"></path>
+                        </g>
+                    </svg>
+                    <div class="mx-1">
+                        <button (click)="toggleCreateReportModal()"
+                            class="text-lg font-bold text-blue-900 cursor-pointer hover:text-blue-600 hover:underline text-left">Create
+                            a New Report
+                        </button>
+                    </div>
+                </div>
+
+                <div class="p-4">
+                    <p class="text-sm text-gray-500 mb-4">Step by step process of creating a custom RMS report.</p>
+                    <hr>
+                    <p class="font-bold text-lg text-gray-500 mt-4 cursor-pointer">Dash boards</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- To show the modal to show all the reports -->
+    <div class="fixed inset-0 flex items-center justify-center z-50 px-4" [class.hidden]="!allReportsModalShow">
+        <div class="fixed inset-0 bg-black opacity-50"></div>
+        <div class="bg-white p-4 shadow-md rounded-lg relative w-full md:w-2/3">
+            <div class="flex justify-between mb-4 items-center">
+                <h2 class="text-lg font-semibold text-gray-500">Download Reports</h2>
+                <a class="text-xs text-blue-700 cursor-pointer" routerLink="/printReport">Print Report List 🖶</a>
+            </div>
+            <app-reports (childEvent)="onDelete($event)"></app-reports>
+            <button (click)="toggleAllReportsModal()"
+                class="mt-4 bg-primary-blue text-white px-4 py-2 rounded hover:bg-blue-600">Close</button>
+        </div>
+    </div>
+
+    <!-- To show all the excel files to download -->
+    <div class="fixed inset-0 flex items-center justify-center z-50 px-4" [class.hidden]="!excelFilesModalShow">
+        <div class="fixed inset-0 bg-black opacity-50"></div>
+        <div class="bg-white p-4 shadow-md rounded-lg relative w-full md:w-2/3">
+            <div class="flex justify-between mb-4 items-center">
+                <h2 class="text-lg font-semibold text-gray-500">Excel Report Download</h2>
+            </div>
+            <app-excel-files></app-excel-files>
+            <button (click)="toggleExcelFilesModal()"
+                class="mt-4 bg-primary-blue text-white px-4 py-2 rounded hover:bg-blue-600">Close</button>
+        </div>
+    </div>
+
+    <!-- To show all modals to modify user info -->
+    <div class="fixed inset-0 flex items-center justify-center z-50 px-4"
+        [class.hidden]="userModifyModalShow.length===0">
+        <div class="fixed inset-0 bg-black opacity-50"></div>
+        <div class="bg-white p-4 shadow-md rounded-lg relative w-full md:w-2/3">
+            <div class="flex justify-between mb-4 items-center">
+                <h2 class="text-lg font-semibold text-gray-500">{{userModifyModalShow}}</h2>
+                <button (click)="closeUserModifyModal()"
+                    class="bg-red-500 text-white rounded-full w-6 h-6 hover:bg-red-700">✖</button>
+            </div>
+            <app-user-modify *ngIf="userInfo" [userModifyModalShow]="userModifyModalShow" [userInfo]="userInfo"
+                (childEvent)="getUserInfo()"></app-user-modify>
+        </div>
+    </div>
+
+
+    <!-- To create new report (FORM)-->
+    <div class="fixed inset-0 flex items-center justify-center z-50 px-4" [class.hidden]="!createReportModal">
+        <div class="fixed inset-0 bg-black opacity-50"></div>
+        <div class="bg-white p-4 shadow-md rounded-lg relative w-full md:w-2/3">
+            <div class="flex justify-between mb-4 items-center">
+                <h2 class="text-lg font-semibold text-gray-500">Create New Report</h2>
+                <button (click)="toggleCreateReportModal()"
+                    class="bg-red-500 text-white rounded-full w-6 h-6 hover:bg-red-700">✖</button>
+            </div>
+
+            <form [formGroup]="createReportForm" (ngSubmit)="onSubmitCreateReport()">
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">Report Name</label>
+                    <input type="text" id="email" placeholder="Enter Report Name" formControlName="reportName"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        required>
+                </div>
+
+                <div *ngIf="reportSources" class="mb-6">
+                    <label for="reportType" class="block mb-2 text-sm font-bold text-gray-500">Report Source</label>
+                    <select id="reportType" (change)="getReportTypes($event)" formControlName="application"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option value="" disabled selected hidden>Select Report Source</option>
+                        <option *ngFor="let item of reportSources" [value]="item.dBaseName">
+                            {{item.application}} 
+                            <span *ngIf="item.subApplication">({{item.subApplication}})</span>
+                        </option>
+                    </select>
+                </div>
+
+                <div *ngIf="reportTypes.length>0" class="mb-6">
+                    <label for="reportType" class="block mb-2 text-sm font-bold text-gray-500">Report Type</label>
+                    <select id="reportType" formControlName="rptType"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option value="" disabled selected hidden>Select a Report Type</option>
+                        <option *ngFor="let item of reportTypes" [value]="item.reportType">{{item.reportType}}</option>
+                    </select>
+                </div>
+                  
+                <div *ngIf="isRptType3()" class="mb-6">
+                    <label for="Ranking" class="block mb-2 text-sm font-bold text-gray-500"></label>
+                    <select id="ranking" formControlName="ranking"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                    <option value="" disabled selected hidden>Select Ranking Type</option>
+                    <option *ngFor="let item of RankingParameterArray" [value]="item.code">{{item.name}}</option>
+                    </select>
+                </div>
+               
+                <div class="flex items-center">
+                    <button [disabled]="createReportForm.invalid" type="submit" class="bg-primary-blue text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-gray-500">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+</div>

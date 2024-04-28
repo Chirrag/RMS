@@ -1,0 +1,34 @@
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.deps.json
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.pdb
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.csproj.AssemblyReference.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.AssemblyInfoInputs.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.AssemblyInfo.cs
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.csproj.CoreCompileInputs.cache
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\refint\QScores.Domain.dll
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.pdb
+D:\Web Development\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\ref\QScores.Domain.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.deps.json
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.pdb
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.AssemblyInfoInputs.cache
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.AssemblyInfo.cs
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.csproj.CoreCompileInputs.cache
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\refint\QScores.Domain.dll
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.pdb
+D:\ASP\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\ref\QScores.Domain.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.deps.json
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\bin\Debug\net6.0\QScores.Domain.pdb
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.AssemblyInfoInputs.cache
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.AssemblyInfo.cs
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.csproj.CoreCompileInputs.cache
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\refint\QScores.Domain.dll
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\QScores.Domain.pdb
+D:\VersionSecond\qscores-net-core\QScoresAPI\QScores.Domain\obj\Debug\net6.0\ref\QScores.Domain.dll

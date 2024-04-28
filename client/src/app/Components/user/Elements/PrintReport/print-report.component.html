@@ -1,0 +1,21 @@
+<div class="overflow-x-auto">
+    <table class="min-w-full divide-y divide-gray-200">
+        <caption>Print Report</caption>
+        <thead>
+            <tr>
+                <th class="px-6 py-4 text-left text-xs font-medium text-white bg-blue-800  uppercase tracking-wider">ReportName</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-white bg-blue-800 uppercase tracking-wider">Report Date</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-white bg-blue-800 uppercase tracking-wider">Tracking Number</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+            <tr *ngFor="let item of allReport">
+                <td class="px-6 py-4 whitespace-nowrap">{{item.reportName}}</td>
+                <td class="px-6 py-4 whitespace-nowrap">{{item.datetime}}</td>
+                <td class="px-6 py-4 whitespace-nowrap">{{item.recID}}</td>
+            </tr>
+           
+        </tbody>
+    </table>
+    
+</div>

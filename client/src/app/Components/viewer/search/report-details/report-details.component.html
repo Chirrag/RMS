@@ -1,0 +1,41 @@
+<div *ngIf="SearchView.length" class="p-4 sm:p-12 bg-gray-100 mx-2 sm:mx-7 border-2">
+    <p class="text-xs sm:text-base my-2 text-gray-500">
+        The recognized industry standard for measuring consumer appeal of personalities, characters, licensed
+        properties, programs, and brands.
+    </p>
+    <div class="border-2 p-4 sm:p-7">
+        <div>
+            <h1 *ngIf="SearchView.length" class="text-2xl sm:text-5xl font-semibold mt-4 sm:mt-0 text-gray-500">{{SearchView[0].name}}</h1>
+            <p *ngIf="SearchView.length" class="text-xs sm:text-base my-2 text-gray-500">
+                {{SearchView[0].studyType}}
+            </p>
+            <p class="text-xs sm:text-base my-2 text-gray-500" *ngFor="let items of SearchView">
+                {{items.study}}
+            </p>
+        </div>
+        <span class="mt-2 sm:mt-0 text-gray-500"><a routerLink="/search" style="float: right;">back</a></span>
+    
+        <p class="text-xs sm:text-base my-4 sm:my-10 text-gray-500">
+            We are happy to help you with your search results and guide you in purchasing the right data to reach your
+            goals.<br><br>
+            Q Score report contains a variety of demographics across age, gender, household income, market
+            size, region, race, ethnicity, presence of children, and other key characteristics. Our top-level staff will
+            assist with any analysis of your report and interpret the data relative to your specific needs.<br><br>
+
+            Contact us by phone (1-516-365-7979) or email us to provide you with our unmatched and unbiased counsel and
+            analytical support.
+        </p>
+    </div>
+</div>
+
+<div *ngIf="!SearchView.length" class="container w-full">
+    <P class="text-center">Data Not Found media content</P>
+</div>
+
+<br>
+
+<hr class="mt-4">
+
+<div class="text-center w-full mt-4">
+    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm sm:text-md font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:border-gray-600 dark:hover:text-black" routerLink="/">RETURN TO HOME PAGE</button>
+</div>

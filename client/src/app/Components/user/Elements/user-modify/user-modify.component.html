@@ -1,0 +1,79 @@
+<!-- Edit Profile Form -->
+<form *ngIf="userModifyModalShow=='Edit Profile'" [formGroup]="editProfileForm" (ngSubmit)="onSubmitEditProfile()">
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">Full Name</label>
+    <input type="text" id="email" formControlName="fullName"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+      required>
+  </div>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">Main Telephone Number</label>
+    <input type="text" id="email" formControlName="officePhone"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+  </div>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">Cellphone Number</label>
+    <input type="text" id="email" formControlName="cellPhone"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+  </div>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">Account Username (Email Address)</label>
+    <input type="email" id="email" [value]="userInfo.emailAddress"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+      required disabled>
+  </div>
+
+  <div class="flex items-center">
+    <button type="submit" class="bg-primary-blue text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-gray-500"
+      [disabled]="editProfileForm.invalid">Submit</button>
+    <p class="text-red-500 mx-2 font-semibold text-xs sm:text-base">{{errorMsg}}</p>
+  </div>
+</form>
+
+
+<!-- Change Password Form -->
+<form *ngIf="userModifyModalShow=='Change Password'" [formGroup]="changePasswordForm"
+  (ngSubmit)="onSubmitChangePassword()">
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">Old Password</label>
+    <input type="password" id="oldPassword" formControlName="oldPassword"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+      required>
+  </div>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">New Password</label>
+    <input type="password" id="newPassword" formControlName="newPassword"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+  </div>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-bold text-gray-500">Confirm New Password</label>
+    <input type="password" id="newPasswordAgain" formControlName="newPasswordAgain"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+    <span
+      *ngIf="changePasswordForm.controls['newPasswordAgain'].errors && changePasswordForm.controls['newPasswordAgain'].touched"
+      class="text-xs text-red-500">Password doesn't match.
+    </span>
+  </div>
+
+  <div class="flex items-center">
+    <button type="submit" class="bg-primary-blue text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-gray-500"
+      [disabled]="changePasswordForm.invalid">Submit</button>
+    <p class="text-red-500 mx-2 font-semibold text-xs sm:text-base">{{errorMsgPasswordChange}}</p>
+  </div>
+</form>
+
+
+<!-- Change Picture Form -->
+<form *ngIf="userModifyModalShow=='Change Picture'" [formGroup]="changePictureForm"
+  (ngSubmit)="onSubmitChangePicture()">
+  <input (change)="handleImageInput($event)" accept="image/*" name="image" class="block w-full"
+    aria-describedby="file_input_help" id="file_input" type="file" formControlName="imageFile">
+  <p class="my-1 text-xs text-gray-500" id="file_input_help">For best results, please select a photo that is 100 pixels
+    by 100 pixels, or has equal height and width.</p>
+
+  <div class="flex items-center">
+    <button type="submit" class="bg-primary-blue text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-gray-500"
+      [disabled]="changePictureForm.invalid">Submit</button>
+    <p class="text-red-500 mx-2 font-semibold text-xs sm:text-base">{{errorMsg}}</p>
+  </div>
+</form>

@@ -1,0 +1,290 @@
+<div class="m-5 sm:m-10">
+  <div class="p-2 m-2 flex justify-end items-center">
+    <img class="w-full" src="/assets/wecanhelp-banner.jpg" alt="Banner Image" />
+    <a [routerLink]="['/user']" class="text-gray-500 ">
+      <img src="https://img.icons8.com/ios/50/000000/home--v1.png" alt="Home Icon"
+        class="inline-block align-middle m-2 w-4" />
+      <strong>Return to the Client Dashboard</strong>
+    </a>
+    <a [routerLink]="'/editReport/Report/'+parameters" class="text-gray-500">
+      <img src="https://img.icons8.com/ios/50/000000/document.png" alt="Home Icon"
+        class="inline-block align-middle m-2 w-4 " />
+      <strong>Return to the Report Editor</strong>
+    </a>
+  </div>
+  <div class="p-2 m-2">
+    <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl">Formatting</h2>
+    <div class="flex flex-col md:flex-row items-center">
+      <label for="Select Formatting" class="block text-lg font-bold text-gray-500 mr-2">Select Format:</label>
+
+      <select id="Formatting" [(ngModel)]="selectedValue"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5">
+        <option *ngFor="let item of myArray" [value]="item">{{item}}</option>
+      </select>
+      <div class="includeCheckbox px-5 m-3">
+        <input type="checkbox" id="includeCheckbox" class="p-2" [(ngModel)]="includeCategoriesValue"/>
+        <label for="include Categories" style="
+    padding: 0.5rem;" class="text-sm">Include Categories Average</label>
+      </div>
+      <button type="button"
+        class="custom-button"
+        (click)="GetQScoreReportData()">Create Report</button>
+        
+        <div *ngIf="showLoader" class="loader-container">
+          <div class="loader">
+            <svg aria-hidden="true" class="inline w-12 h-12 text-gray-200 animate-spin white:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+              <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+          </svg>
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+    </div>
+  </div>
+  <hr>
+  <br>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+  <!-- Individual Profile -->
+  
+  <div *ngIf="showTable && myCurrentValue == 'Individual profile'" id="table-Data"
+    class="w-full min-h-screen flex flex-col items-left justify-center overflow-x-auto">
+    <h1 class="font-bold text-2xl m-2">Report</h1>
+    <hr>
+    <app-pagination [totalItems]="QScoreData.length" [itemsPerPage]="itemsPerPage"
+      (pageChange)="onPageChange($event)"></app-pagination>
+    <!-- Indivisual Profile Table -->
+    <div class="TabelDesign"  id="table-data">
+      <div class="table-responsive">
+      <table class="table-auto border-collapse w-full mb-4 rounded-md">
+        <tr>
+          <td class="px-4 py-2"><strong>Report Name:</strong></td>
+          <td class="px-4 py-2">{{ReportData[0].reportName}}</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2"><strong>Report ID:</strong></td>
+          <td class="px-4 py-2">{{parameters}} &nbsp; &nbsp; &nbsp; <strong class="ApplicationName">{{ApplicationName}}</strong></td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2"><strong>Report Type:</strong></td>
+          <td class="px-4 py-2">{{ReportName}}</td>
+        </tr>
+      </table>
+      <table *ngIf="showTable && myCurrentValue == 'Individual profile'"
+        class="table-auto border-collapse w-full mb-4 rounded-md" id="xml-data">
+        <thead>
+          <tr>
+            <th *ngIf="QScoreData[0].name" class="px-2 py-1 bg-gray-300 text-center">Category</th>
+            <th *ngIf="QScoreData[0].demographic" class="px-2 py-1 bg-gray-300 text-center">Demographic</th>
+            <th *ngIf="QScoreData[0].studyDate" class="px-2 py-1 bg-gray-300 text-center">Study Wave</th>
+            <th *ngIf="QScoreData[0].oneOfMyFavorites" class="px-4 py-1 bg-gray-300 text-center">One of My Favorites
+            </th>
+            <th *ngIf="QScoreData[0].veryGood" class="px-4 py-1 bg-gray-300 text-center">Very Good</th>
+            <th *ngIf="QScoreData[0].good" class="px-4 py-1 bg-gray-300 text-center">Good</th>
+            <th *ngIf="QScoreData[0].fair" class="px-4 py-1 bg-gray-300 text-center">Fair</th>
+            <th *ngIf="QScoreData[0].poor" class="px-4 py-1 bg-gray-300 text-center">poor</th>
+            <th *ngIf="QScoreData[0].fairPoor" class="px-4 py-1 bg-gray-300 text-center">Fair / Poor</th>
+            <th *ngIf="QScoreData[0].totalFamiliar" class="px-4 py-1 bg-gray-300 text-center">Total Familiar</th>
+            <th *ngIf="QScoreData[0].positiveQScore" class="px-4 py-1 bg-gray-300 text-center">Positive Q Score</th>
+            <th *ngIf="QScoreData[0].negativeQScore" class="px-4 py-1 bg-gray-300 text-centereft">Negative Q Score</th>
+            <th *ngIf="QScoreData[0].favorite" class="px-4 py-1 bg-gray-300 text-center">Favorite</th>
+            <th *ngIf="QScoreData[0].totalOpinion" class="px-4 py-1 bg-gray-300 text-center">Total Opinion</th>
+            <th *ngIf="QScoreData[0].totalNetworkViewersPositiveQScore" class="px-4 py-1 bg-gray-300 text-center">Total
+              Network Viewers Positive QScore</th>
+            <th *ngIf="QScoreData[0].totalNetworkViewersNegativeQScore" class="px-4 py-1 bg-gray-300 text-center">Total
+              Network Viewers Negative QScore</th>
+            <th *ngIf="QScoreData[0].regularNetworkViewersPositiveQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Regular Network Viewers Positive QScore</th>
+            <th *ngIf="QScoreData[0].regularNetworkViewersNegativeQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Regular Network Viewers Negative QScore</th>
+            <th *ngIf="QScoreData[0].occasionalNetworkViewersPositiveQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Occasional Network Viewers Positive QScore</th>
+            <th *ngIf="QScoreData[0].occasionalNetworkViewersNegativeQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Occasional Network Viewers Negative QScore</th>
+            <th *ngIf="QScoreData[0].notSeen" class="px-4 py-1 bg-gray-300 text-center">Not Seen</th>
+            <th *ngIf="QScoreData[0].airDay" class="px-4 py-1 bg-gray-300 text-center">Air Day</th>
+            <th *ngIf="QScoreData[0].airTime" class="px-4 py-1 bg-gray-300 text-center">Air Time</th>
+            <th *ngIf="QScoreData[0].network" class="px-4 py-1 bg-gray-300 text-center">Network</th>
+            <th *ngIf="QScoreData[0].programType" class="px-4 py-1 bg-gray-300 text-center">ProgramType</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let item of pagedQScoreData">
+            <tr  *ngIf="currentValue!=item.name+' '+item.studyDate">
+            <th colspan="29" class="border px-2 py-1 text-left bg-gray-200"
+              *ngIf="currentValue!=item.name+' '+item.studyDate">{{item.name}} {{item.studyDate}} ({{rankingParameter}})
+              {{setValue(item.name+' '+item.studyDate)}}</th>
+            </tr>
+            <tr>
+              <td *ngIf="item.name" class=" border px-2 py-1 text-left">{{item.name}}</td>
+              <td *ngIf="item.demographic" class="border px-2 py-1 text-left">{{item.demographic}}</td>
+              <td *ngIf="item.studyDate" class="border  px-2 py-1 text-left">{{item.studyDate}}</td>
+              <td *ngIf="item.oneOfMyFavorites" class=" border px-4 py-1 text-left">{{item.oneOfMyFavorites}}</td>
+              <td *ngIf="item.veryGood" class=" border px-4 py-1 text-left">{{item.veryGood}}</td>
+              <td *ngIf="item.good" class=" border px-4 py-1 text-left">{{item.good}}</td>
+              <td *ngIf="item.fair" class="border px-4 py-1  text-left">{{item.fair}}</td>
+              <td *ngIf="item.poor" class="border px-4 py-1 text-left">{{item.poor}}</td>
+              <td *ngIf="item.fairPoor" class=" border px-4 py-1 text-left">{{item.fairPoor}}</td>
+              <td *ngIf="item.totalFamiliar" class=" border px-4 py-1  text-left">{{item.totalFamiliar}}</td>
+              <td *ngIf="item.positiveQScore" class="border px-4 py-1  text-left">{{item.positiveQScore}}</td>
+              <td *ngIf="item.negativeQScore" class="border px-4 py-1  text-left">{{item.negativeQScore}}</td>
+              <td *ngIf="item.favorite" class="border px-4 py-1 te text-left">{{item.favorite}}</td>
+              <td *ngIf="item.totalOpinion" class="border px-4 py-1 te text-left">{{item.totalOpinion}}</td>
+              <td *ngIf="item.totalNetworkViewersPositiveQScore" class="border px-4 py-1  text-left">
+                {{item.totalNetworkViewersPositiveQScore}}</td>
+              <td *ngIf="item.totalNetworkViewersNegativeQScore" class="border px-4 py-1  text-left">
+                {{item.totalNetworkViewersNegativeQScore}}</td>
+              <td *ngIf="item.regularNetworkViewersPositiveQScore" class="border px-4 py-1  text-left">
+                {{item.regularNetworkViewersPositiveQScore}}</td>
+              <td *ngIf="item.regularNetworkViewersNegativeQScore" class="border px-4 py-2  text-left">
+                {{item.regularNetworkViewersNegativeQScore}}</td>
+              <td *ngIf="item.occasionalNetworkViewersPositiveQScore" class="border px-4 py-1 text-left">
+                {{item.occasionalNetworkViewersPositiveQScore}}</td>
+              <td *ngIf="item.occasionalNetworkViewersNegativeQScore" class="border px-4 py-1 text-ce text-left">
+                {{item.occasionalNetworkViewersNegativeQScore}}</td>
+              <td *ngIf="item.notSeen" class="border px-4 py-1 text-left">{{item.notSeen}}</td>
+              <td *ngIf="item.airDay" class="border px-4 py-1 text-left">{{item.airDay}}</td>
+              <td *ngIf="item.airTime" class="border px-4 py-1 text-left">{{item.airTime}}</td>
+              <td *ngIf="item.network" class="border px-4 py-1 text-left">{{item.network}}</td>
+              <td *ngIf="item.programType" class="border px-4 py-1 text-left">{{item.programType}}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <div class="tableFooter">
+      <img class="w-5 ml-auto" src="/assets/Report Management System Color.png" alt="">
+      <p class="p-2 ">COPYRIGHT (C) MARKETING EVALUATIONS INC ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+  <div *ngIf="showTable && myCurrentValue == 'Individual profile'" class="flex flex-row float-right p-2 m-2">
+    <select id="DownlaodFormat" [(ngModel)]="FormateValue" 
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 m-4">
+      <option *ngFor="let item of DownloadArray" [value]="item" id="{{item}}">{{item}}</option>
+    </select>
+    <button type="button" (click)="exportFile()"
+      class="text-black bg-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium text-sm px-2  m-4 py-2 ml-auto">Export
+      Report</button>
+  </div>
+
+  <!-- Comparison Profile -->
+  <div *ngIf="showTable && myCurrentValue == 'Comparison profile'" id="table-Data"
+    class="w-full min-h-screen flex flex-col items-left justify-center overflow-x-auto">
+    <h1 class="font-bold text-2xl m-2">Report</h1>
+    <hr>
+    <app-pagination [totalItems]="QScoreData.length" [itemsPerPage]="itemsPerPage"
+      (pageChange)="onPageChange($event)"></app-pagination>
+    <div class="TabelDesign"  id="table-data">
+      <div class="table-responsive">
+      <table class="mb-4 rounded-md">
+        <thead>
+        <tr>
+          <td class="px-4 py-2"><strong>Report Name:</strong></td>
+          <td class="px-4 py-2">{{ReportData[0].reportName}}</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2"><strong>Report ID:</strong></td>
+          <td class="px-4 py-2">{{parameters}} &nbsp; &nbsp; &nbsp; <strong class="ApplicationName">{{ApplicationName}}</strong></td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2"><strong>Report Type:</strong></td>
+          <td class="px-4 py-2">{{ReportName}}</td>
+        </tr>
+      </thead>
+      </table>
+      <table *ngIf="showTable && myCurrentValue == 'Comparison profile'" id="xml-data"
+        class="table-auto border-collapse  w-full mb-4 rounded-md">
+        <thead>
+          <tr>
+            <th *ngIf="QScoreData[0].demographic" class="px-2 py-1 bg-gray-300 text-center">Demographics</th>
+            <th *ngIf="QScoreData[0].oneOfMyFavorites" class="px-4 py-1 bg-gray-300 text-center ">One of My Favorites </th>
+            <th *ngIf="QScoreData[0].veryGood" class="px-4 py-1 bg-gray-300 text-center ">Very Good</th>
+            <th *ngIf="QScoreData[0].good" class="px-4 py-1 bg-gray-300 text-center ">Good</th>
+            <th *ngIf="QScoreData[0].fair" class="px-4 py-1 bg-gray-300 text-center ">Fair</th>
+            <th *ngIf="QScoreData[0].poor" class="px-4 py-1 bg-gray-300 text-center ">poor</th>
+            <th *ngIf="QScoreData[0].fairPoor" class="px-4 py-1 bg-gray-300 text-center ">Fair / Poor</th>
+            <th *ngIf="QScoreData[0].totalFamiliar" class="px-4 py-1 bg-gray-300 text-center ">Total Familiar</th>
+            <th *ngIf="QScoreData[0].positiveQScore" class="px-4 py-1 bg-gray-300 text-center ">Positive Q Score</th>
+            <th *ngIf="QScoreData[0].negativeQScore" class="px-4 py-1 bg-gray-300 text-center ">Negative Q Score</th>
+            <th *ngIf="QScoreData[0].favorite" class="px-4 py-1 bg-gray-300 text-center">Favorite</th>
+            <th *ngIf="QScoreData[0].totalOpinion" class="px-4 py-1 bg-gray-300 text-center">Total Opinion</th>
+            <th *ngIf="QScoreData[0].totalNetworkViewersPositiveQScore" class="px-4 py-1 bg-gray-300 text-center ">Total
+              Network Viewers Positive QScore</th>
+            <th *ngIf="QScoreData[0].totalNetworkViewersNegativeQScore" class="px-4 py-1 bg-gray-300 text-center">Total
+              Network Viewers Negative QScore</th>
+            <th *ngIf="QScoreData[0].regularNetworkViewersPositiveQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Regular Network Viewers Positive QScore</th>
+            <th *ngIf="QScoreData[0].regularNetworkViewersNegativeQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Regular Network Viewers Negative QScore</th>
+            <th *ngIf="QScoreData[0].occasionalNetworkViewersPositiveQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Occasional Network Viewers Positive QScore</th>
+            <th *ngIf="QScoreData[0].occasionalNetworkViewersNegativeQScore" class="px-4 py-1 bg-gray-300 text-center">
+              Occasional Network Viewers Negative QScore</th>
+            <th *ngIf="QScoreData[0].notSeen" class="px-4 py-1 bg-gray-300 text-center ">Not Seen</th>
+            <th *ngIf="QScoreData[0].airDay" class="px-4 py-1 bg-gray-300 text-center ">Air Day</th>
+            <th *ngIf="QScoreData[0].airTime" class="px-4 py-1 bg-gray-300 text-center ">Air Time</th>
+            <th *ngIf="QScoreData[0].network" class="px-4 py-1 bg-gray-300 text-center ">Network</th>
+            <th *ngIf="QScoreData[0].programType" class="px-4 py-1 bg-gray-300 text-center ">ProgramType</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let item of pagedQScoreData">
+            <tr>
+              <th colspan="29" class="border px-2 py-1 text-left bg-gray-200 text-center"
+              *ngIf="comaprsionValue!=item.name+' '+item.studyDate">{{item.name}} {{item.studyDate}} ({{item.demoCode}})
+              {{setValueForComparison(item.name+' '+item.studyDate)}}</th>
+            </tr>
+            <tr>
+              <td *ngIf="item.demographic" class="border px-2 py-1 text-left">{{item.demographic}}</td>
+              <td *ngIf="item.oneOfMyFavorites" class=" border px-4 py-1 text-left">{{item.oneOfMyFavorites}}</td>
+              <td *ngIf="item.veryGood" class=" border px-4 py-1 text-left">{{item.veryGood}}</td>
+              <td *ngIf="item.good" class=" border px-4 py-1 text-left">{{item.good}}</td>
+              <td *ngIf="item.fair" class="border px-4 py-1  text-left">{{item.fair}}</td>
+              <td *ngIf="item.poor" class="border px-4 py-1 text-left">{{item.poor}}</td>
+              <td *ngIf="item.fairPoor" class=" border px-4 py-1 text-left">{{item.fairPoor}}</td>
+              <td *ngIf="item.totalFamiliar" class=" border px-4 py-1  text-left">{{item.totalFamiliar}}</td>
+              <td *ngIf="item.positiveQScore" class="border px-4 py-1  text-left">{{item.positiveQScore}}</td>
+              <td *ngIf="item.negativeQScore" class="border px-4 py-1  text-left">{{item.negativeQScore}}</td>
+              <td *ngIf="item.favorite" class="border px-4 py-1 te text-left">{{item.favorite}}</td>
+              <td *ngIf="item.totalOpinion" class="border px-4 py-1 te text-left">{{item.totalOpinion}}</td>
+              <td *ngIf="item.totalNetworkViewersPositiveQScore" class="border px-4 py-1  text-left">
+                {{item.totalNetworkViewersPositiveQScore}}</td>
+              <td *ngIf="item.totalNetworkViewersNegativeQScore" class="border px-4 py-1  text-left">
+                {{item.totalNetworkViewersNegativeQScore}}</td>
+              <td *ngIf="item.regularNetworkViewersPositiveQScore" class="border px-4 py-1  text-left">
+                {{item.regularNetworkViewersPositiveQScore}}</td>
+              <td *ngIf="item.regularNetworkViewersNegativeQScore" class="border px-4 py-2  text-left">
+                {{item.regularNetworkViewersNegativeQScore}}</td>
+              <td *ngIf="item.occasionalNetworkViewersPositiveQScore" class="border px-4 py-1 text-left">
+                {{item.occasionalNetworkViewersPositiveQScore}}</td>
+              <td *ngIf="item.occasionalNetworkViewersNegativeQScore" class="border px-4 py-1 text-left">
+                {{item.occasionalNetworkViewersNegativeQScore}}</td>
+              <td *ngIf="item.notSeen" class="border px-4 py-1 text-left">{{item.notSeen}}</td>
+              <td *ngIf="item.airDay" class="border px-4 py-1 text-left">{{item.airDay}}</td>
+              <td *ngIf="item.airTime" class="border px-4 py-1 text-left">{{item.airTime}}</td>
+              <td *ngIf="item.network" class="border px-4 py-1 text-left">{{item.network}}</td>
+              <td *ngIf="item.programType" class="border px-4 py-1 text-left">{{item.programType}}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <div class="tableFooter mt-5 sm:mt-0">
+      <img class="w-5 sm:ml-auto" src="/assets/Report Management System Color.png" alt="Q Logo">
+      <p class="p-2 mt-2 sm:mt-0">COPYRIGHT (C) MARKETING EVALUATIONS INC ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+  <div *ngIf="showTable && myCurrentValue == 'Comparison profile'" class="flex flex-row float-right p-2 m-2">
+    <select id="DownlaodFormat" [(ngModel)]="FormateValue"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 m-4">
+      <option *ngFor="let item of DownloadArray" [value]="item">{{item}}</option>
+    </select>
+    <button type="button" (click)="exportFile()"
+      class="text-black bg-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium text-sm px-2  m-4 py-2 ml-auto">Export
+      Report</button>
+  </div>
+  <!-- Page End here  -->
+</div>
